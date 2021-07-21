@@ -24,9 +24,9 @@ public class MultipleSwitchWeekTest {
     }
 
     @Test
-    public void whenWrongdayThen0() {
+    public void whenWrongdayThen1() {
         String day = "Wrongday";
-        int result = 0;
+        int result = -1;
         int expect = MultipleSwitchWeek.numberOfDay(day);
 
         Assert.assertEquals(expect, result);
